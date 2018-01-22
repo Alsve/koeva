@@ -10,10 +10,10 @@ Koeva is a utility and/or template which is intended to run on Raspberry-Pi as a
 #### Part of Library
 It comprise of several part of program. Those are following:
 
-* src/kvmain .c : this is a main entry of koeva program
-* src/kvsession .h,.c : session utility, currently made for Green Coffee Bean session.
-* include/kvmenu .h : set of loop menu utility and creation of menu.
-* include/koeva-util-debug.h : multipurpose set of logger macro
+* **src/kvmain .c** : this is a main entry of koeva program
+* **src/kvsession .h,.c** : session utility, currently made for Green Coffee Bean session.
+* **include/kvmenu .h** : set of loop menu utility and creation of menu.
+* **include/koeva-util-debug.h** : multipurpose set of logger macro
 
 Each of the file is accompanied with detailed documentation between the source code.
 
