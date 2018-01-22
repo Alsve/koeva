@@ -1,7 +1,7 @@
 # koeva
 
 ### Preface
-Heavily refactored code and documentation of koeva_old, better be separated for easy access. See [https://www.github.com/Alsve/koeva_old for source](here). If you have a plan to make another bean classification device and wish to adopt koeva program, it is better getting this one, as the old one is not accompanied with any documentation and never will.
+Heavily refactored code and documentation of koeva_old, better be separated for easy access. See [here] (https://www.github.com/Alsve/koeva_old) for source). If you have a plan to make another bean classification device and wish to adopt koeva program, it is better getting this one, as the old one is not accompanied with any documentation and never will.
 Refactoring is still in progress.
 
 ### Introduction
