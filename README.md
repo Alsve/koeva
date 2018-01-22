@@ -18,6 +18,6 @@ It comprise of several part of program. Those are following:
 Each of the file is accompanied with detailed documentation between the source code.
 
 ### To-Do Lists
-1. Refactoring of libkserial from koeva_old to standard linux kernel style c programming standard.
+1. Refactoring of libkserial from koeva_old to linux kernel c programming standard style.
 2. Adding full implementation of from koeva_old to kvmain.
 3. Adding image processing algorithm and library to repository and add it to kvmain.
