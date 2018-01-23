@@ -64,7 +64,7 @@ const double SNI_1_2907_2008_DEFECTS_VALUE[] = {
 
 struct koeva_session {
         unsigned int total_beans;
-        unsigned int defects_array[KOPI_BAGUS];
+        unsigned double defects_array[KOPI_BAGUS];
         void (*add_defects)(struct koeva_session *this,
                             koeva_defect_list value);
         int (*what_grade)(struct koeva_session*);
