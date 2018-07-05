@@ -28,6 +28,7 @@ each defect produced by analysis.
 
 #include <stdlib.h>
 #include <errno.h>
+
 #include <koeva-util-debug.h>
 #include <kvsession.h>
 
