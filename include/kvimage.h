@@ -14,12 +14,16 @@
 #ifndef KOEVA_IMAGE__H
 #define KOEVA_IMAGE__H
 
+struct RGBColors {
+    double red;
+    double green;
+    double blue;
+};
+
 struct image_features {
-    unsigned char red;
-    unsigned char green;
-    unsigned char blue;
-    unsigned char area;
-    unsigned char edge;
+    struct RGBColors color;
+    size_t area;
+    size_t edge;
 };
 
 struct image_features * kv_image_extract_feature(IplImage *src);
