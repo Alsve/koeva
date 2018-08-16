@@ -102,8 +102,8 @@ struct mat2D mat2D_transpose(struct mat2D _mat)
         struct mat2D ret = mat2D_create(_mat.n, _mat.m);
 
         for (i = 0; i < _mat.m; i++)
-            for (j = 0; j < _mat.n; j++)
-                ret.arr[j * ret.n + i] = _mat.arr[i * _mat.n + j];
+                for (j = 0; j < _mat.n; j++)
+                        ret.arr[j * ret.n + i] = _mat.arr[i * _mat.n + j];
 
         return ret;
 }
@@ -183,12 +183,14 @@ struct mat2D bsxfun_matrix(char *_op, struct mat2D _mat, struct mat2D _mat2)
                 ret.n = _mat.n;
                 ret.arr = malloc(sizeof(double) * ret.m * ret.n);
 
-                struct mat2D _mat2_reped = repmat(_mat2, _mat.m / _mat2.m, _mat.n / _mat2.n);
+                struct mat2D _mat2_reped = repmat(_mat2, _mat.m / _mat2.m, 
+                                                  _mat.n / _mat2.n);
 
                 for (i = 0; i < ret.m; i++)
                         for (j = 0; j < ret.n; j++) {
                                 pos = i * ret.n + j;
-                                ret.arr[pos] = _mat.arr[pos] * _mat2_reped.arr[pos];
+                                ret.arr[pos] = _mat.arr[pos] * 
+                                        _mat2_reped.arr[pos];
                         }
 
                 mat2D_destroy(_mat2_reped);
